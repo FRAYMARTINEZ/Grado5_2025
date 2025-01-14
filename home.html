@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<script type="text/javascript">
+ 
+ 
+    window.onload = function()
+    {
+     var canvas = document.getElementById('ejercicio');
+     var pt = canvas.getContext('2de');
+     setInterval(function() {
+     // generamos un array de píxeles aleatorios
+     var image_data = dibuja_ruido( pt );
+     // la pintamos al objeto canvas
+     pt.putImageData( image_data, 0, 0);
+     }, 200);
+    }
+     
+     
+    dibuja_ruido = function(pt)
+    {
+     var imageData = pt.createImageData(150, 150);
+
+
+
+var pixels = imageData.data;
+ var numPixels = imageData.width*imageData.height;
+ // Para cada píxel le generamos un color aleatorio
+ for (var i = 0; i< numPixels;  i++) { 
+ pixels[i*4] = Math.floor(Math.random()*255); // Red 
+ pixels[i*4+1] = Math.floor(Math.random()*255); // Green 
+ pixels[i*4+2] = Math.floor(Math.random()*255); // Blue 
+ pixels[i*4+3] = 255; // Alpha
+ };
+ return imageData
+}
+</script>
+</head>
+<body>
+ <canvas width="150" height="150" style="border:1px solid grey" id="ejercicio"> </canvas>
+</body>
+<body>
+    
+</body>
+</html>

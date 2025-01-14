@@ -1,0 +1,52 @@
+#titulo {
+    font-family: arial black;
+    color: rgb(21, 115, 139);
+    text-align: center;
+    font-size: 45px;
+
+}
+
+#miBoton1 {
+    font-family: 'Franklin Gothic Medium';
+    background-color: rgb(62, 163, 161);
+    color: rgb(2, 3, 16);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    left: 10px;
+    cursor: pointer;
+
+}
+
+#miBoton2 {
+    font-family: 'Franklin Gothic Medium';
+    background-color: rgb(62, 163, 161);
+    color: rgb(2, 3, 16);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#miBoton3 {
+    font-family: 'Franklin Gothic Medium';
+    background-color: rgb(62, 163, 161);
+    color: rgb(2, 3, 16);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+#Menu {
+
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
